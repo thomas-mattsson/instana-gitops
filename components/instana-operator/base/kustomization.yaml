@@ -2,4 +2,21 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - namespace.yaml
+- namespace.yaml
+- generated/certificate_default_instana-operator-webhook.yaml
+- generated/clusterrole__instana-operator-webhook.yaml
+- generated/clusterrole__instana-operator.yaml
+- generated/clusterrolebinding__instana-operator-webhook.yaml
+- generated/clusterrolebinding__instana-operator.yaml
+- generated/customresourcedefinition__cores.instana.io.yaml
+- generated/customresourcedefinition__datastores.instana.io.yaml
+- generated/customresourcedefinition__units.instana.io.yaml
+- generated/deployment_default_instana-operator-webhook.yaml
+- generated/deployment_default_instana-operator.yaml
+- generated/issuer_default_instana-operator-webhook.yaml
+- generated/role_default_instana-operator-leader-election.yaml
+- generated/rolebinding_default_instana-operator-leader-election.yaml
+- generated/service_default_instana-operator-webhook.yaml
+- generated/serviceaccount_default_instana-operator-webhook.yaml
+- generated/serviceaccount_default_instana-operator.yaml
+- generated/validatingwebhookconfiguration__instana-operator-webhook-validating.yaml
