@@ -6,11 +6,11 @@ metadata:
     app.kubernetes.io/name: instana
     app.kubernetes.io/version: 241-1
   name: instana-operator-webhook
-  namespace: default
+  namespace: instana-operator
 spec:
   dnsNames:
-    - instana-operator-webhook.default
-    - instana-operator-webhook.default.svc
+    - instana-operator-webhook.instana-operator
+    - instana-operator-webhook.instana-operator.svc
   issuerRef:
     kind: Issuer
     name: instana-operator-webhook
