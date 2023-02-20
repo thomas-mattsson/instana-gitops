@@ -1,6 +1,6 @@
 # Instructions
 
-Generated with the following commands from the `components/instana-operator/base` directory
+Generate instana operator files and add them with the following commands:
 
 ```bash
 kubectl instana operator template --output-dir generated
