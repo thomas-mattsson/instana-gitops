@@ -65,6 +65,8 @@ spec:
             - mountPath: /tmp
               name: tmpdir
       enableServiceLinks: false
+      imagePullSecrets:
+        - name: instana-registry
       serviceAccountName: instana-operator
       terminationGracePeriodSeconds: 300
       volumes:

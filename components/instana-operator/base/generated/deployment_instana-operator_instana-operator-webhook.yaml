@@ -61,6 +61,8 @@ spec:
             - mountPath: /tmp
               name: tmpdir
       enableServiceLinks: false
+      imagePullSecrets:
+        - name: instana-registry
       serviceAccountName: instana-operator-webhook
       volumes:
         - name: cert
