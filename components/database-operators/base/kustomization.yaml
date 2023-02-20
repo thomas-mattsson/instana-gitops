@@ -7,4 +7,4 @@ resources:
 - cockroachdb-sub.yaml
 - elastic-sub.yaml
 - kafka-sub.yaml
-#- https://raw.githubusercontent.com/Altinity/clickhouse-operator/master/deploy/operator/clickhouse-operator-install-bundle.yaml
+- clickhouse-sub.yaml
