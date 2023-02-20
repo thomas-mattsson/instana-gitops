@@ -7,7 +7,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: instana
+    namespace: instana-operator
     server: https://kubernetes.default.svc
   project: instana
   source:
